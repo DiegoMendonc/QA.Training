@@ -22,13 +22,13 @@ O objetivo deste repositório é:
 - **Tipos de Testes**: Testes funcionais e não funcionais, com exemplos práticos.
 
 ### 2. Ferramentas de QA
-- **Ferramentas de Automação**: Selenium, JUnit, TestNG, entre outras.
-- **Ferramentas de Gerenciamento de Testes**: JIRA, TestRail, etc.
+- **Ferramentas de Automação**: Selenium, JUnit, TestNG, entre outras. (futuramente)
+- **Ferramentas de Gerenciamento de Testes**: JIRA, TestRail, etc. (futuramente)
 
 ### 3. Projetos Práticos
-- **Automação de Testes de UI**: Exemplos de scripts de automação para interfaces de usuário.
-- **Testes de API**: Testes para APIs RESTful utilizando Postman.
-- **Testes de Performance**: Testes de carga e estresse com JMeter.
+- **Automação de Testes de UI**: Exemplos de scripts de automação para interfaces de usuário. (futuramente)
+- **Testes de API**: Testes para APIs RESTful utilizando Postman. (futuramente)
+- **Testes de Performance**: Testes de carga e estresse com JMeter. (futuramente)
 
 ## Como Contribuir
 
@@ -42,7 +42,7 @@ Contribuições são sempre bem-vindas! Se você deseja colaborar com este repos
 
 ## Contato
 
-Se você tiver dúvidas, sugestões ou apenas quiser trocar uma ideia sobre QA, sinta-se à vontade para entrar em contato comigo através do e-mail: seu-email@exemplo.com.
+Se você tiver dúvidas, sugestões ou apenas quiser trocar uma ideia sobre QA, sinta-se à vontade para entrar em contato comigo através do e-mail: diego_felipe_g.m@live.com.
 
 ---
 
