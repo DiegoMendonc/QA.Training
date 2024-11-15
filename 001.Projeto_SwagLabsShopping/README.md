@@ -4,7 +4,7 @@
 Este projeto de QA é voltado para a loja virtual **SwagLabs Shopping**. O objetivo é garantir a qualidade e a funcionalidade do site por meio de testes rigorosos seguindo a metodologia ágil **Scrum**.
 
 ## Gerenciamento de Projeto
-O gerenciamento do projeto será realizado utilizando a plataforma **JIRA**, enquanto a documentação será mantida na plataforma **Confluence**.
+O gerenciamento do projeto será realizado utilizando a plataforma **JIRA**.
 
 ## Tipo de Teste
 - **Funcional**
