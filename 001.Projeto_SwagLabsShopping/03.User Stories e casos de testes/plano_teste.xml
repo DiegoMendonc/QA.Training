@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>QA</projectKey>
+    <exportDate>2024-11-15 20:59:56 UTC</exportDate>
+    <folders>
+        <folder fullPath="Login" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="202559749" key="QA-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Diego Felipe Gonçalves Mendonça</createdBy>
+            <createdOn>2024-11-15 19:59:33 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro e deseja criar uma conta]]></name>
+            <objective><![CDATA[Verificar funcionalidade de login.]]></objective>
+            <owner>609427fd000224006ab9f11a</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And não esteja cadastrado no sistema
+
+When clicar em 'criar conta'
+
+Then será redirecionado para uma tela de criação de nova conta.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="202559807" key="QA-T2" paramType="PARAMETER">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Diego Felipe Gonçalves Mendonça</createdBy>
+            <createdOn>2024-11-15 20:04:09 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro tenta realizar o login]]></name>
+            <owner>609427fd000224006ab9f11a</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters>
+                <parameter index="0">
+                    <defaultValue><![CDATA[https://www.saucedemo.com/v1/]]></defaultValue>
+                    <name><![CDATA[URL: Portal QA]]></name>
+                </parameter>
+            </parameters>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar URL x<br><br>]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio deve visualizar tela de login]]></expectedResult>
+                        <testData><![CDATA[<var>URL: Portal QA</var>&nbsp;]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio digite username no campo 'username']]></description>
+                        <expectedResult><![CDATA[Uma mensagem surgir&aacute; informando que username &eacute; inv&aacute;lido]]></expectedResult>
+                        <testData><![CDATA['mariana']]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="202560082" key="QA-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Diego Felipe Gonçalves Mendonça</createdBy>
+            <createdOn>2024-11-15 20:12:07 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente com cadastro informa dados incorretos de acesso]]></name>
+            <owner>609427fd000224006ab9f11a</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And adicione um username correto
+
+But escreva uma senha incorreta
+
+When clicar em clicar em “criar conta”
+
+Then uma mensagem surgirá avisando que a senha está incorreta]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
