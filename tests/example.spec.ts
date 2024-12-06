@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('CRUD de To-Do List', () =>
+test.describe('CRUD de To-Do List', () => 
     // Antes de cada teste, navegue até a URL base da aplicação
     test.beforeEach(async ({ page }) => {
-      await page.goto('http://localhost:3000/Todo-List#/all-tasks')
-    }));
+        await page.goto('http://localhost:3000/Todo-List#/all-tasks');
+    });
 
     //1º Teste -> Criando uma nova tarefa - CREATE
     test('Deve criar uma nova tarefa', async ({ page }) => {
