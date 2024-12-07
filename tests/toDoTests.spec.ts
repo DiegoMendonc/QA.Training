@@ -17,5 +17,5 @@ test('Deverá criar uma nova tarefa - CREATE', async ({ page }) => {
   expect(inputValue).toBe('Teste01');
 
   //Clicando em criar Card To Do
-  await page.locator('[class="sc-bqWxrE eXwWtY btn btn-primary"]').click();
+  await page.locator('[class="sc-bqWxrE eXwWtY btn btn-primary"]').click()
 })
