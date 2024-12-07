@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Olá! Seja bem-vindo ao meu repositório de treinamento de Quality Assurance (QA). Este espaço foi criado para documentar e compartilhar meu progresso na área de QA, além de fornecer recursos e insights valiosos para todos os interessados em qualidade de software.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Diego Mendonça",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.49.0",
