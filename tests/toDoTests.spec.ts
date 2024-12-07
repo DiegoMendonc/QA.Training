@@ -18,4 +18,4 @@ test('Deverá criar uma nova tarefa - CREATE', async ({ page }) => {
 
   //Clicando em criar Card To Do
   await page.locator('[class="sc-bqWxrE eXwWtY btn btn-primary"]').click();
-});
+})
