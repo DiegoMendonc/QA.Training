@@ -37,7 +37,7 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 npm install
 
-Configuração
+## Configuração
 Certifique-se de que o Playwright está configurado corretamente. Você pode inicializar o Playwright com o comando abaixo:
 
 bash
