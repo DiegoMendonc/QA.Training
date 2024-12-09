@@ -35,7 +35,8 @@ test('Deverá criar uma nova tarefa - CREATE', async ({ page }) => {
 test('Deverá visualizar uma tarefa - READ', async ({ page }) => {
 
   await goToAplication(page);
-  //expect(await page.locator())
+  const button = page.locator('xpath=/html/body/div[1]/div/div/div[2]/div[5]/div[2]/footer/div/span[4]');
+  await button.click();
 
 });
 
@@ -43,6 +44,9 @@ test('Deverá visualizar uma tarefa - READ', async ({ page }) => {
 test('Deverá atualizar uma tarefa - UPDATE', async ({ page }) => {
 
   await goToAplication(page);
+  const buttonUpdate = page.locator('#root > div > div > div.sc-hLBbgP.dNqfEy > div.sc-eDvSVe.gpffcO > div:nth-child(1) > footer > div > span:nth-child(3) > svg');
+  await buttonUpdate.click();
+  await expect page.getByTitle('Task 01').fill('Task Corrigida');
   //expect(await page.locator())
 
 });
@@ -51,7 +55,7 @@ test('Deverá atualizar uma tarefa - UPDATE', async ({ page }) => {
 test('Deverá deletar uma tarefa - DELETE', async ({ page }) => {
 
   await goToAplication(page);
-  await page.getByPlaceholder('http://www.w3.org/2000/svg').click();
+  await page.locator('[class="sc-bCfvAP hGybGf"]').click()
   //expect(await page.locator())
 
 });
