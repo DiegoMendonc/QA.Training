@@ -21,14 +21,14 @@ Este projeto utiliza a ferramenta Playwright para realizar testes automatizados 
     - [Verificar Progresso de Tarefas](#verificar-progresso-de-tarefas)
 6. [Casos de Uso dos Testes](#casos-de-uso-dos-testes)
 
-## Requisitos
+# Requisitos
 
 - Node.js (versão 14 ou superior)
 - NPM ou Yarn
 - Playwright
 - TypeScript
 
-## Instalação
+# Instalação
 
 Clone o repositório e instale as dependências:
 
@@ -37,7 +37,7 @@ git clone https://github.com/DiegoMendonc/QA.Training/tree/main/002.PLAYWRIGHT
 cd 002.PLAYWRIGHT
 npm install
 ```
-## Configuração
+# Configuração
 Certifique-se de que o Playwright está configurado corretamente. Você pode inicializar o Playwright com o comando abaixo:
 
 ```bash
@@ -52,7 +52,7 @@ Para abrir o relatório HTML dos testes, use o comando:
 ```bash
 npm run report
 ```
-# # Descrição dos Testes
+# Descrição dos Testes
 - CRUD de TODO
     Este teste cobre a criação, leitura, atualização e exclusão de tarefas na aplicação TODO List.
 
@@ -71,7 +71,7 @@ npm run report
 - Verificar Progresso de Tarefas
     Este teste verifica se o progresso das tarefas concluídas está sendo calculado corretamente.
 
-## Casos de Uso dos Testes
+# Casos de Uso dos Testes
 - Caso de Uso 1: CRUD de TODO
     Descrição: O usuário deve ser capaz de criar, visualizar, editar e excluir tarefas na aplicação.
 
