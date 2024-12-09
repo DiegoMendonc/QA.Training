@@ -22,11 +22,7 @@ test('Deverá criar uma nova tarefa - CREATE', async ({ page }) => {
   await submitButton.click();
   expect(await page.getByText('text=Teste01'));
 
-  // Recarregar a página
-  //await page.reload();
-
-  // Verificar se a página foi recarregada corretamente
-  //await expect(page).toHaveURL('http://localhost:3000/Todo-List#/all-tasks')
+  
 });
 
 
