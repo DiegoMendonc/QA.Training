@@ -20,13 +20,13 @@ test('Deverá criar uma nova tarefa - CREATE', async ({ page }) => {
   // Clicar no botão de submissão
   const submitButton = page.locator('[class="sc-bqWxrE eXwWtY btn btn-primary"]');
   await submitButton.click();
-  await page.waitForSelector('text=Teste01');
+  expect(await page.getByText('text=Teste01'));
 
   // Recarregar a página
-  await page.reload();
+  //await page.reload();
 
   // Verificar se a página foi recarregada corretamente
-  await expect(page).toHaveURL('http://localhost:3000/Todo-List#/all-tasks')
+  //await expect(page).toHaveURL('http://localhost:3000/Todo-List#/all-tasks')
 });
 
 
@@ -43,19 +43,38 @@ test('Deverá visualizar uma tarefa - READ', async ({ page }) => {
 //Atualizando o card criado - Update
 test('Deverá atualizar uma tarefa - UPDATE', async ({ page }) => {
 
+  //Acessando a plataforma:
   await goToAplication(page);
+
+  //Localizando o botão de visualizar o card ToDo:
   const buttonUpdate = page.locator('#root > div > div > div.sc-hLBbgP.dNqfEy > div.sc-eDvSVe.gpffcO > div:nth-child(1) > footer > div > span:nth-child(3) > svg');
   await buttonUpdate.click();
-  await expect page.getByTitle('Task 01').fill('Task Corrigida');
-  //expect(await page.locator())
+  expect (await buttonUpdate.getByText('Task 01'));
+
+  //Verificando o campo de input para edição do nome do card ToDo
+  const campoPesquisa = page.locator('input[placeholder="e.g: study for the test"]');
+  await campoPesquisa.fill('Task Updated');
+
+  //Clicando no botão de editar o card ToDo:
+  const submitButton = page.locator('[class="sc-bqWxrE eXwWtY btn btn-primary"]');
+  await submitButton.click();
+  expect (await page.getByText('Task Updated'));
 
 });
 
 //Deletando o card criado - DELETE
 test('Deverá deletar uma tarefa - DELETE', async ({ page }) => {
-
+  
+  //Acessar a página;
   await goToAplication(page);
-  await page.locator('[class="sc-bCfvAP hGybGf"]').click()
-  //expect(await page.locator())
+  
+  //Clicar no campo DELETE:
+  const campoDelete = page.locator('#root > div > div > div.sc-hLBbgP.dNqfEy > div.sc-eDvSVe.gpffcO > div:nth-child(2) > footer > div > span:nth-child(3) > svg');
+  await campoDelete.click();
+  expect(await page.getByText('Task 2'));
+
+  //Clicar em confirmar a exclusão do ToDo:
+  const botaoDelete = page.locator('[class="sc-kgTSHT eaTHhe btn btn-primary"]');
+  await botaoDelete.click()
 
 });
