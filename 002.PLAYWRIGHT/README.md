@@ -4,7 +4,7 @@ Este projeto utiliza a ferramenta Playwright para realizar testes automatizados 
 
 ## Repositório Utilizado
 
-- **Repositório Base:** [Todo-List](https://github.com/ZiadSheriif/Todo-List):
+- **Repositório Base da Aplicação a ser testada:** [Todo-List](https://github.com/ZiadSheriif/Todo-List):
 
 ## Índice
 
@@ -33,111 +33,109 @@ Este projeto utiliza a ferramenta Playwright para realizar testes automatizados 
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/DiegoMendonc/QA.Training/tree/main/002.PLAYWRIGHT
+cd 002.PLAYWRIGHT
 npm install
-
+```
 ## Configuração
 Certifique-se de que o Playwright está configurado corretamente. Você pode inicializar o Playwright com o comando abaixo:
 
-bash
+```bash
 npx playwright install
 Execução dos Testes
 Para executar os testes, use o comando:
-
-bash
+```
+```bash
 npm run test
 Para abrir o relatório HTML dos testes, use o comando:
-
-bash
+```
+```bash
 npm run report
-Descrição dos Testes
-CRUD de TODO
-Este teste cobre a criação, leitura, atualização e exclusão de tarefas na aplicação TODO List.
+```
+# # Descrição dos Testes
+- CRUD de TODO
+    Este teste cobre a criação, leitura, atualização e exclusão de tarefas na aplicação TODO List.
 
-Filtrar TODO
-Este teste verifica a funcionalidade de filtragem das tarefas.
+- Filtrar TODO
+    Este teste verifica a funcionalidade de filtragem das tarefas.
 
-Verificar Filtros de Tarefas
-Este teste verifica se os filtros "Today's Tasks", "Important Tasks", "Completed Tasks" e "Uncompleted Tasks" estão funcionando corretamente.
+- Verificar Filtros de Tarefas
+    Este teste verifica se os filtros "Today's Tasks", "Important Tasks", "Completed Tasks" e "Uncompleted Tasks" estão funcionando corretamente.
 
-Alterar Visualização
-Este teste verifica se a alteração entre visualização em lista e grid está funcionando corretamente.
+- Alterar Visualização
+    Este teste verifica se a alteração entre visualização em lista e grid está funcionando corretamente.
 
-Completar TODO
-Este teste cobre a funcionalidade de marcar uma tarefa como concluída.
+- Completar TODO
+    Este teste cobre a funcionalidade de marcar uma tarefa como concluída.
 
-Verificar Progresso de Tarefas
-Este teste verifica se o progresso das tarefas concluídas está sendo calculado corretamente.
+- Verificar Progresso de Tarefas
+    Este teste verifica se o progresso das tarefas concluídas está sendo calculado corretamente.
 
-Casos de Uso dos Testes
-Caso de Uso 1: CRUD de TODO
-Descrição: O usuário deve ser capaz de criar, visualizar, editar e excluir tarefas na aplicação.
+## Casos de Uso dos Testes
+- Caso de Uso 1: CRUD de TODO
+    Descrição: O usuário deve ser capaz de criar, visualizar, editar e excluir tarefas na aplicação.
 
-Passos:
+        Passos:
 
-Criar uma nova tarefa.
+            Criar uma nova tarefa.
 
-Verificar se a tarefa foi criada.
+            Verificar se a tarefa foi criada.
 
-Atualizar a tarefa.
+            Atualizar a tarefa.
 
-Verificar se a tarefa foi atualizada.
+            Verificar se a tarefa foi atualizada.
 
-Excluir a tarefa.
+            Excluir a tarefa.
 
-Verificar se a tarefa foi excluída.
+            Verificar se a tarefa foi excluída.
 
-Caso de Uso 2: Filtrar TODO
-Descrição: O usuário deve ser capaz de filtrar as tarefas com base em critérios específicos.
+- Caso de Uso 2: Filtrar TODO
+    Descrição: O usuário deve ser capaz de filtrar as tarefas com base em critérios específicos.
 
-Passos:
+        Passos:
 
-Aplicar um filtro de tarefas.
+            Aplicar um filtro de tarefas.
 
-Verificar se apenas as tarefas que atendem ao critério do filtro são exibidas.
+            Verificar se apenas as tarefas que atendem ao critério do filtro são exibidas.
 
-Caso de Uso 3: Verificar Filtros de Tarefas
-Descrição: O usuário deve ser capaz de usar filtros como "Today's Tasks", "Important Tasks", "Completed Tasks" e "Uncompleted Tasks" corretamente.
+- Caso de Uso 3: Verificar Filtros de Tarefas
+    Descrição: O usuário deve ser capaz de usar filtros como "Today's Tasks", "Important Tasks", "Completed Tasks" e "Uncompleted Tasks" corretamente.
 
-Passos:
+        Passos:
 
-Aplicar cada filtro.
+            Aplicar cada filtro.
 
-Verificar se os resultados correspondem ao filtro aplicado.
+            Verificar se os resultados correspondem ao filtro aplicado.
 
-Caso de Uso 4: Alterar Visualização
-Descrição: O usuário deve ser capaz de alternar entre as visualizações de lista e grid.
+- Caso de Uso 4: Alterar Visualização
+    Descrição: O usuário deve ser capaz de alternar entre as visualizações de lista e grid.
 
-Passos:
+        Passos:
 
-Alterar a visualização para lista.
+            Alterar a visualização para lista.
 
-Verificar se a visualização está em lista.
+            Verificar se a visualização está em lista.
 
-Alterar a visualização para grid.
+            Alterar a visualização para grid.
 
-Verificar se a visualização está em grid.
+            Verificar se a visualização está em grid.
 
-Caso de Uso 5: Completar TODO
-Descrição: O usuário deve ser capaz de marcar uma tarefa como concluída.
+- Caso de Uso 5: Completar TODO
+    Descrição: O usuário deve ser capaz de marcar uma tarefa como concluída.
 
-Passos:
+        Passos:
 
-Marcar uma tarefa como concluída.
+            Marcar uma tarefa como concluída.
 
-Verificar se a tarefa está marcada como concluída.
+            Verificar se a tarefa está marcada como concluída.
 
-Caso de Uso 6: Verificar Progresso de Tarefas
-Descrição: O usuário deve ser capaz de ver o progresso das tarefas concluídas.
+- Caso de Uso 6: Verificar Progresso de Tarefas
+    Descrição: O usuário deve ser capaz de ver o progresso das tarefas concluídas.
 
-Passos:
+        Passos:
 
-Marcar tarefas como concluídas.
+            Marcar tarefas como concluídas.
 
-Verificar se a porcentagem de conclusão é atualizada corretamente.
+            Verificar se a porcentagem de conclusão é atualizada corretamente.
 
-Para mais informações sobre Playwright, consulte a documentação oficial.
-
-
-Este README.md fornece uma visão geral completa dos testes incluídos no projeto, incluindo instruções de configuração e execução, bem como descrições detalhadas dos testes e dos casos de uso. Certifique-se de ajustar os detalhes conforme necessário para seu projeto específico. Se precisar de mais assistência ou tiver outras perguntas, estou à disposição para ajudar!
+Para mais informações sobre Playwright, consulte a [documentação oficial](https://playwright.dev/).
