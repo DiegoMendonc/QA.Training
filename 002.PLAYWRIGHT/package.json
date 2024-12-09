@@ -1,0 +1,22 @@
+{
+  "name": "qa.training",
+  "version": "1.0.0",
+  "description": "Olá! Seja bem-vindo ao meu repositório de treinamento de Quality Assurance (QA). Este espaço foi criado para documentar e compartilhar meu progresso na área de QA, além de fornecer recursos e insights valiosos para todos os interessados em qualidade de software.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "Diego Mendonça",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1"
+  },
+  "dependencies": {
+    "@reportportal/agent-js-mocha": "^5.1.0",
+    "@reportportal/agent-js-playwright": "^5.1.11",
+    "node": "^22.12.0"
+  }
+}
