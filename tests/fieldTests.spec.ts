@@ -7,7 +7,7 @@ test('Deverá testar a funcionalidade do campo - Todays Tasks', async ({ page })
     await goToAplication(page);
 
     //Selecionando o campo de filtro e clicando no mesmo:
-    const fieldButton01 = page.locator('body > div.sc-idXgbr.evthbv.offcanvas.offcanvas-start.show > div.offcanvas-body > a.sc-dmctIk.eKwQCE.active');
+    const fieldButton01 = page.locator('body > div.sc-idXgbr.evthbv.offcanvas.offcanvas-start.show > div.offcanvas-body > a:nth-child(1)');
     await fieldButton01.click();
     
     expect(await page.getByTitle("Today's Task"));
