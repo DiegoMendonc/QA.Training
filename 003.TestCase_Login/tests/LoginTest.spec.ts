@@ -8,14 +8,14 @@ test.describe('Login - Swag Labs', () => {
         await loginPage.goto();
     });
 
-    test('Deve logar com credenciais válidas', async ({ page }) => {
+    test('Correct Credentials - Login Test', async ({ page }) => {
         const loginCredential = new LoginCredential(page);
 
         await loginCredential.login('usuario_valido', 'senha_valida');
         expect(await page.url()).toBe('https://www.saucedemo.com/v1/inventory.html');
     });
-
-    test('Deve mostrar mensagem de erro com credenciais inválidas', async ({ page }) => {
+    
+    test('Incorrect Credentials - Login test', async ({ page }) => {
         const loginCredential = new LoginCredential(page);
         await loginCredential.login('usuario_invalido', 'senha_invalida');
         const errorMessage = await loginCredential.getErrorMessage();
