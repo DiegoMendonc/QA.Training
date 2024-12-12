@@ -8,12 +8,8 @@ export class LoginCredential {
     }
 
     async login(username: string, password: string) {
-        await this.page.fill('input[data-test="username"]', 'standard_user');
-        await this.page.fill('input[data-test="password"]', 'secret_sauce');
+        await this.page.fill('input[data-test="username"]', username);
+        await this.page.fill('input[data-test="password"]', password);
         await this.page.click('[class="btn_action"]');
     }
 
-    async getErrorMessage() {
-        return await this.page.textContent('Epic sadface: ');
-    }
-}
