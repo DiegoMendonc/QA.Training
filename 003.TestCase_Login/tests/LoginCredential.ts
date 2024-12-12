@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 
-export class LoginCredential {
+export class LoginPage {
     constructor(private page: Page) {}
 
     async goto() {
@@ -12,4 +12,4 @@ export class LoginCredential {
         await this.page.fill('input[data-test="password"]', password);
         await this.page.click('[class="btn_action"]');
     }
-
+};
