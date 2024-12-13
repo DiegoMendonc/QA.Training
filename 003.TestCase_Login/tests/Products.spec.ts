@@ -1,5 +1,4 @@
 import { expect, test } from "@playwright/test";
-import { CorrectCredential } from "./CorrectCredential";
 
 test('all products names begin "Sauce Labs"', async ({ page }) => {
     await test.step('login', async () => {
