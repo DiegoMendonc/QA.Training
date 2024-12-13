@@ -13,7 +13,7 @@ export class LoginCredential {
         await this.page.click('[class="btn_action"]');
     }
     async logincorrect() {
-        await this.page.locator('input[data-test="username"]').fil('standard_user');
+        await this.page.locator('input[data-test="username"]').fill('standard_user');
         await this.page.locator('input[data-test="password"]').fill('secret_sauce');
         await this.page.click('[class="btn_action"]');
 };
